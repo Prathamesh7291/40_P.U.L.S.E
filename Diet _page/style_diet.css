@@ -1,3 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainlogo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header{
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+.navlinks{
+    list-style-type: none;
+    padding: 0 2%;
+}
+
+.navlinks a{
+    color: black;
+    text-decoration: none;
+    padding: 10%;
+}
+
+.navlinks li a:hover{
+    color: rgb(255, 85, 111);
+    border-bottom: 3px solid rgb(255, 85, 111);
+}
+
+.navlinks li a:active{
+    color: rgb(255, 85, 111);
+    border-bottom: 3px solid rgb(255, 85, 111);
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 15px;
+}
+
+header a{
+    padding: .5% 1%;
+}
+
+.login button{
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 85, 111);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.register button{
+    cursor: pointer;
+    border: 2px solid rgb(255, 85, 111);
+    border-radius: 4px;
+    background-color: white;
+    color:rgb(255, 85, 111);
+    padding: 8px 20px;
+}
+
+.register button:hover{
+    background-color: rgb(255, 85, 111);
+    color: white;
+}
+
+.login button:hover{
+    height: 5%;
+    color: white;
+}
+
+
+
+
 h1{
     color: rgb(185, 20, 20);
 }
@@ -7,9 +93,27 @@ body{
     
 }
 .img_1{
-      float:right ;
+      padding-left: 75%;
+}
+.para-1{
+    padding-left: 40%;
+    padding-right: 40%;
+   
 }
 .para-2{
     text-align: left;
     padding-right: 75%;
+    font-size: large;
+}
+hr{
+    padding: 0%;
+}
+.para-3{
+    text-align: left;
+    padding-right: 40%;
+}
+table{
+    
+    width: 50%;
+    border: 1px solid black;
 }
