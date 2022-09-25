@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 #mainlogo{
@@ -15,18 +16,21 @@ body{
 }
 
 header{
+    font-size: 1.1em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 2%;
+    padding: 1% 2%;
 }
 
 .navlinks{
     list-style-type: none;
+    padding: 0 2%;
 }
 
-.navlinks li a{
+.navlinks a{
     text-decoration: none;
+    padding: 10%;
 }
 
 .navlinks li a:hover{
@@ -41,16 +45,15 @@ header{
 
 .navlinks li{
     display: inline-block;
-    padding: 10px;
-    
+    padding: 15px;
 }
 
 header a{
-    padding: 10px;
+    padding: .5% 1%;
 }
 
-
 .login button{
+    font-size: .9em;
     border: none;
     border-radius: 4px;
     background-color: rgb(255, 85, 111);
@@ -60,6 +63,7 @@ header a{
 }
 
 .register button{
+    font-size: .9em;
     cursor: pointer;
     border: 2px solid rgb(255, 85, 111);
     border-radius: 4px;
@@ -69,20 +73,77 @@ header a{
 }
 
 .register button:hover{
-    background-color: rgb(255, 85, 111);
+    background-color: rgb(249, 17, 52);
     color: white;
 }
 
 .login button:hover{
     height: 5%;
     color: white;
+    background-color: rgb(249, 17, 52);
+}
+
+.intro{
+    margin: .3% 0% 3% 0%;
+    border: 1px solid;
 }
 
 #introbg{
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 100%;
     align-items: center;
+}
+
+.section{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dyk{
+    width: 20%;
+}
+
+.check{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.check h1{
+    color: rgb(255, 85, 111);
+    padding: 3% 3% 3% 3%;
+}
+
+.check p{
+    margin: 0 15% 3% 15%;
+    text-align: center;
+}
+
+#why{
+    width: 25%;
+    margin: 0 0 3% 0;
+}
+
+.check a{
+    font-size: 20px;
+    background-color: rgb(255, 85, 111);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    margin-bottom: 1.5%;
+}
+
+.check a:hover{
+    background-color: rgb(249, 17, 52);
 }
 
 
