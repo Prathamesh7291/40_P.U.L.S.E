@@ -1,33 +1,88 @@
 *{
-    padding: 0px;
+    box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
+    background-color: white;
 }
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar{
-    display: flex;
+#mainlogo{
+    cursor: pointer;
+    margin-right: auto;
 }
 
-.navlogo{
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 2%;
+}
+
+.navlinks{
+    list-style-type: none;
+}
+
+.navlinks li a{
+    text-decoration: none;
+}
+
+.navlinks li a:hover{
+    color: rgb(255, 85, 111);
+    border-bottom: 3px solid rgb(255, 85, 111);
+}
+
+.navlinks li a:active{
+    color: rgb(255, 85, 111);
+    border-bottom: 3px solid rgb(255, 85, 111);
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 10px;
     
 }
-.links{
+
+header a{
+    padding: 10px;
+}
+
+
+.login button{
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 85, 111);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.register button{
+    cursor: pointer;
+    border: 2px solid rgb(255, 85, 111);
+    border-radius: 4px;
+    background-color: white;
+    color:rgb(255, 85, 111);
+    padding: 8px 20px;
+}
+
+.register button:hover{
+    background-color: rgb(255, 85, 111);
+    color: white;
+}
+
+.login button:hover{
+    height: 5%;
+    color: white;
+}
+
+#introbg{
     display: flex;
-    border: 1px solid;
-    list-style-type: none;
-    margin: 10%;
-    align-items: right;
-    align-content: right;
-    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    align-items: center;
 }
 
-.links li{
-    padding: 2%;
-}
 
-.intro{
-    width: 100;
-}
