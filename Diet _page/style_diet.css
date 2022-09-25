@@ -85,7 +85,7 @@ header a{
 
 
 h1{
-    color: rgb(185, 20, 20);
+    color:  rgb(255, 85, 111);;
 }
 body{
     text-align: center;
@@ -117,3 +117,10 @@ table{
     width: 50%;
     border: 1px solid black;
 }
+th{
+    background-color: rgb(255, 85, 111);
+}
+.tab{
+     
+}
+
