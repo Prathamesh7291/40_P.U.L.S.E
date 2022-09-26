@@ -73,27 +73,8 @@ header a{
     border-radius: 4px;;
     color: white;
 }
-.highlight{
-    font-size: 2em;
-    color:#E4363E;
-    font-weight: bold;
-    margin: 2%;
-    text-align: center;
-}
-.reason{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 1.3em;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    border: 2px solid #C4CFD8;
-    border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    text-align: left;
-    margin:2%;
-    padding:2% 4% 2% 4% ;
-    line-height: 1.5em;
-}
+
+
 .quoteImg,.quoteTxt{
     font-size: 1.5em;
     word-spacing: 0.3em;
@@ -131,16 +112,21 @@ h1{
     grid-template-rows: repeat(2,1fr); 
     margin: 2%;
 }
+.list3 p{
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
 #def1,#def3{
     font-size: 1.2em;
     grid-area:1/1/2/3 ;
-    word-spacing: 0.7em;
+    word-spacing: 0.5em;
     line-height: 1.5em;
 }
 .list1,.list3{
     font-size: 1.1em;
     grid-area:2/1/3/3 ;
     padding: 2.5%;
+    padding-top: 0px;
 }
 .list2{
     font-size: 1.1em;
@@ -158,18 +144,65 @@ h1{
 }
 #def2{    font-size: 1.2em;
     grid-area: 1/2/2/4;
-    word-spacing: 0.7em;
+    word-spacing: 0.5em;
     line-height: 1.5em;
 }
 #img2{
     grid-area: 1/1/3/2;
 }
-ul li a{
-    list-style: decimal;
+.list ul li a{
     color: rgb(249, 17, 52);
     line-height: 1.5em;
+    border-bottom: 3px solid rgb(249, 17, 52);
+}
+li{
+    list-style: none; 
+}
+
+*/
+.exImg{
+    position: relative;
+    overflow: hidden;
+}
+.exMean{
+    position: absolute;
+}
+.check{
+    border-radius: 10px;
+    margin: 2% 20% 2% 20%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
 
 }
-.list ul li a:hover{
-    border-bottom: 3px solid rgb(249, 17, 52);
+
+.check h1{
+    color: rgb(249, 17, 52);
+    padding: 1% 3% 2% 3%;
+}
+
+.check p{
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 15% 3% 15%;
+    text-align: center;
+
+}
+#why{
+    width: 25%;
+    margin: 0 0 3% 0;
+}
+#ex1 h1{
+    text-align: left;
+    padding-left: 2%;
+}
+#ex2 h1{
+    padding-right: 5.9%;
+}
+#ex3 h1{
+    text-align: left;
+    padding-left: 1.9%;
 }
