@@ -75,18 +75,18 @@ header a{
 }
 
 .quote1{
-    background-color: white;
     position: absolute;
     left: 5%;
-    top: 40%;
-    width: 27%;
+    top: 35%;
+    width: 30%;
     height: 21%;
 }
 
 .quote1 p{
+    font-weight: bold;
     padding: 5%;
     color: #303030;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .quote{
