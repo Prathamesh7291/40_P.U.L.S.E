@@ -59,6 +59,7 @@ header a{
 }
 
 .register button{
+    border-radius: 4px;
     font-size: .9em;
     cursor: pointer;
     border: 2px solid rgb(249, 17, 52);
@@ -112,15 +113,15 @@ header a{
     cursor: pointer;
     text-decoration: none;
     border-radius: 4px;
-    background-color: rgb(249, 17, 52);
     color: white;
+    background-color: rgb(249, 17, 52);
 
     padding: 3%;
 }
 
 .introduction a:hover{
-    background-color: white;
-    color:rgb(249, 17, 52);
+    background-color: rgb(215, 24, 53);
+    color: white;
 }
 
 #introbg{
