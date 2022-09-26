@@ -80,7 +80,7 @@ header a{
     left: 5%;
     top: 40%;
     width: 27%;
-    height: 20%;
+    height: 21%;
 }
 
 .quote1 p{
@@ -98,7 +98,6 @@ header a{
 
 .quoteImg,.quoteTxt{
     font-size: 1.5em;
-    word-spacing: 0.3em;
     line-height: 1.5em;
     text-align: left;
 }
@@ -117,15 +116,17 @@ h1{
     border: 2px solid #C4CFD8;
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-padding-left: 2%;
+    padding-left: 2%;
     margin: 7%;
 }
+
 .exGrid1,.exGrid3{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr) ;
     margin: 2%;
 }
+
 .exGrid2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -140,7 +141,6 @@ padding-left: 2%;
 #def1,#def3{
     font-size: 1.2em;
     grid-area:1/1/2/3 ;
-    word-spacing: 0.5em;
     line-height: 1.5em;
 }
 
@@ -167,7 +167,6 @@ padding-left: 2%;
 #def2{    
     font-size: 1.2em;
     grid-area: 1/2/2/4;
-    word-spacing: 0.5em;
     line-height: 1.5em;
 }
 #img2{
