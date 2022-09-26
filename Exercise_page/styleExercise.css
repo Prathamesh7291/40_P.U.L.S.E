@@ -175,6 +175,7 @@ h1{
 .list ul li a{
     color: rgb(249, 17, 52);
     line-height: 1.5em;
+    text-decoration: underline;
 }
 
 li{
