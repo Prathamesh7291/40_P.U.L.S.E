@@ -12,33 +12,36 @@
     <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
     <div class="container">
         <div class="details">
-            <form class="personaldetails">
-                <h2>User Records</h2>
+            <div class="personaldetails">
+                <h1>Enter the details</h1>
                 <div class="name">
-                    Name : <input type="text" name="username" id="uname" placeholder="Enter Your Name">
+                    <input type="text" name="username" id="uname" placeholder="Enter Your Name">
                 </div>
                 <div class="email">
-                    Email : <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
+                    <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
                 </div>
                 <div class="age">
-                    Age : <input type="number" name="age" placeholder="Enter Your Age" min="15" max="100">
+                    Age : <input type="number" name="age" min="15" max="100">
                 </div>
                 <div class="gender">
-                    Gender : <input type="radio" name="gender" value="Male">Male
-                    <input type="radio" name="gender" value="Female">Female
-                    <input type="radio" name="gender" value="Other">Other
+                    <select name="gender" id="gender">
+                        <option value="Select">--Please Select Your Gender--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
                 <div class="bp">
-                    Resting <abbr title="Blood Pressure"> B.P.</abbr> : <input type="number" name="bp" placeholder="Enter Resting B.P. (in mm Hg) " min="15" max="100">
+                    Resting B.P. (in mm Hg) : <input type="number" name="bp" min="120" max="200">
                 </div>
                 <div class="cholestrol">
-                    Cholestrol Level : <input type="number" name="cholestrol" placeholder="Enter Your Cholestrol level" min="15" max="100">
+                    Cholestrol Level : <input type="number" name="cholestrol" min="60" max="580">
                 </div>
-                <div class="age">
-                    Fasting Blood Sugar : <input type="number" name="age" placeholder="Enter Your Sugar Level in mg/dl" min="15" max="100">
+                <div class="sugar">
+                    Fasting Blood Sugar(in mg/dl): <input type="number" name="sugar" min="120" max="1000">
                 </div>
                 <input type="submit" class="submit" value="Proceed">
-            </form>
+            </div>
         </div>
 
     </div>
