@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+#mainlogo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header{
+    font-size: .9em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.4% 2%;
+}
+
+.navlinks{
+    list-style-type: none;
+    padding: 0 2%;
+}
+
+.navlinks a{
+    text-decoration: none;
+    padding: 10%;
+}
+
+.navlinks li a:hover{
+    color: rgb(249, 17, 52);
+    border-bottom: 3px solid rgb(249, 17, 52);
+}
+
+
+.navlinks li{
+    display: inline-block;
+    padding: 15px;
+}
+
+header a{
+    padding: .5% 1%;
+}
+
+.login button{
+    font-size: .9em;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(249, 17, 52);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.register button{
+    font-size: .9em;
+    cursor: pointer;
+    border: 2px solid rgb(249, 17, 52);
+    background-color: white;
+    color:rgb(249, 17, 52);
+    padding: 8px 20px;
+}
+
+.register button:hover{
+    background-color: rgb(249, 17, 52);
+    border-radius: 4px;;
+    color: white;
+}
+#highlight{
+    font-size: 1.2em;
+    color: #C3505D;
+    font-weight: 200;
+}
