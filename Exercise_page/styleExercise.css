@@ -70,8 +70,90 @@ header a{
     border-radius: 4px;;
     color: white;
 }
-#highlight{
-    font-size: 1.2em;
+.highlight{
+    font-size: 2em;
     color: #C3505D;
-    font-weight: 200;
+    font-weight: bold;
+    margin: 2%;
+    text-align: center;
+}
+.reason{
+    font-size: 1.3em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid #C4CFD8;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: left;
+    margin:2%;
+    padding:2% 4% 2% 4% ;
+    line-height: 1.5em;
+}
+.quoteImg,.quoteTxt{
+    font-size: 1.5em;
+    word-spacing: 0.3em;
+    line-height: 1.5em;
+    text-align: left;
+    margin-left: 0.5em;
+}
+.quoteTxt{
+    margin:0px 2em 2em 2em ;
+}
+.quoteTxt p{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+#ex1,#ex2,#ex3{
+    border: 2px solid #C4CFD8;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: em;
+    margin: 2%;
+}
+.exGrid1,.exGrid3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    margin: 2%;
+}
+.exGrid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr); 
+    margin: 2%;
+}
+#def1,#def3{
+    font-size: 1.2em;
+    grid-area:1/1/2/3 ;
+    word-spacing: 0.7em;
+    line-height: 1.5em;
+}
+.list1,.list3{
+    font-size: 1.1em;
+    grid-area:2/1/3/3 ;
+    padding: 2.5%;
+}
+.list2{
+    font-size: 1.1em;
+    grid-area:2/2/3/4 ;
+    padding: 2.9%;
+}
+#img1,#img3{
+    grid-area: 1/4/3/3;
+}
+#def2{    font-size: 1.2em;
+    grid-area: 1/2/2/4;
+    word-spacing: 0.7em;
+    line-height: 1.5em;
+}
+#img2{
+    grid-area: 1/1/3/2;
+}
+ol li a{
+    list-style: decimal;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
 }
