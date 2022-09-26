@@ -1,31 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
-}
-
-.home{
-    position: absolute;
-    border border-radius: 1px;
-    padding:.5%;
-    top: 2%;
-    left: 2%;
-    text-decoration: none;
-    color:rgb(249, 17, 52);
-}
-
-.home a{
-    font-size: 1.2em;
-}
-
-.home:hover{
-    border-bottom: 2px solid rgb(249, 17, 52);
 }
 
 .container{
@@ -62,6 +45,24 @@ body{
     font-size: 2.5em;
 }
 
+.home{
+    position: absolute;
+    border border-radius: 1px;
+    padding:.5%;
+    top: 2%;
+    left: 2%;
+    text-decoration: none;
+    color:rgb(249, 17, 52);
+}
+
+.home a{
+    font-size: 1.2em;
+}
+
+.home:hover{
+    border-bottom: 2px solid rgb(249, 17, 52);
+}
+
 form button{
     font-size: 1.05em;
     border: none;
@@ -74,14 +75,20 @@ form button{
     color: rgb(249, 17, 52);
 }
 
+form button:hover{
+    background-color: rgb(249, 17, 52);
+    color: white;
+    cursor: pointer;
+}
+
 form a{
+    display: block;;
     text-decoration: none;
     color: rgb(249, 17, 52);
 }
 
-form button:hover{
-    background-color: rgb(249, 17, 52);
-    color: white;
+form a:hover{
+    text-decoration: underline;
     cursor: pointer;
 }
 
