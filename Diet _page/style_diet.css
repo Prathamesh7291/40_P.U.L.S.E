@@ -80,10 +80,6 @@ header a{
     height: 5%;
     color: white;
 }
-
-
-
-
 h1{
     color:  rgb(255, 85, 111);;
 }
@@ -96,6 +92,7 @@ body{
       padding-left: 75%;
 }
 .para-1{
+    border: 2px solid black;
     padding-left: 40%;
     padding-right: 40%;
    
@@ -113,7 +110,6 @@ hr{
     padding-right: 40%;
 }
 table{
-    
     width: 50%;
     border: 1px solid black;
 }
@@ -121,6 +117,4 @@ th{
     background-color: rgb(255, 85, 111);
 }
 .tab{
-     
-}
-
+text-align: center;}
