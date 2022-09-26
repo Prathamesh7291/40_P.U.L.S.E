@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,38 @@
     <link rel="stylesheet" href="style_medical_history.css">
 </head>
 <body>
-    <div class="details">
-        <form class="personaldetails">
-            <h1>Personal Details</h1>
-            <div class="name">
-                Name : <input type="text" name="username" id="uname" placeholder="Enter Your Name">
-            </div>
-            <div class="email">
-                Email : <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
-            </div>
-            <div class="dob">
-                Age : <input type="number" name="age" placeholder="Enter Your Age" min="15" max="100">
-            </div>
-            <div class="gender">
-                Gender : <input type="radio" name="gender" value="Male">Male
-                <input type="radio" name="gender" value="Female">Female
-                <input type="radio" name="gender" value="Other">Other
-            </div>
-        </form>
+    <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
+    <div class="container">
+        <div class="details">
+            <form class="personaldetails">
+                <h2>User Records</h2>
+                <div class="name">
+                    Name : <input type="text" name="username" id="uname" placeholder="Enter Your Name">
+                </div>
+                <div class="email">
+                    Email : <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
+                </div>
+                <div class="age">
+                    Age : <input type="number" name="age" placeholder="Enter Your Age" min="15" max="100">
+                </div>
+                <div class="gender">
+                    Gender : <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                </div>
+                <div class="bp">
+                    Resting <abbr title="Blood Pressure"> B.P.</abbr> : <input type="number" name="bp" placeholder="Enter Resting B.P. (in mm Hg) " min="15" max="100">
+                </div>
+                <div class="cholestrol">
+                    Cholestrol Level : <input type="number" name="cholestrol" placeholder="Enter Your Cholestrol level" min="15" max="100">
+                </div>
+                <div class="age">
+                    Fasting Blood Sugar : <input type="number" name="age" placeholder="Enter Your Sugar Level in mg/dl" min="15" max="100">
+                </div>
+                <input type="submit" class="submit" value="Proceed">
+            </form>
+        </div>
+
     </div>
 </body>
 </html>
