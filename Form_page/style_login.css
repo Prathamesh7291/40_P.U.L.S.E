@@ -10,10 +10,30 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.home{
+    position: absolute;
+    border border-radius: 1px;
+    padding:.5%;
+    top: 2%;
+    left: 2%;
+    text-decoration: none;
+    color:rgb(249, 17, 52);
+}
+
+.home a{
+    font-size: 1.2em;
+}
+
+.home:hover{
+    border-bottom: 2px solid rgb(249, 17, 52);
+}
+
 .container{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
     display: grid;
+    border-radius: 10px;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid;
     position: absolute;
     top: 10%;
     left: 20%;
@@ -21,7 +41,72 @@ body{
     width: 60%;
 }
 
+.left form input{
+    font-size: 1.05em;
+    display: block;
+    width: 80%;
+    padding: 2%;
+    margin: 5% 10%;
+}
+
 .left{
+    width: 100%;
     display: flex;
-    flex-direction: row;;
+    justify-content: baseline;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left h1{
+    padding: 7%;
+    font-size: 2.5em;
+}
+
+form button{
+    font-size: 1.05em;
+    border: none;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 3% 7%;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid rgb(249, 17, 52);
+    color: rgb(249, 17, 52);
+}
+
+form a{
+    text-decoration: none;
+    color: rgb(249, 17, 52);
+}
+
+form button:hover{
+    background-color: rgb(249, 17, 52);
+    color: white;
+    cursor: pointer;
+}
+
+
+.right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:rgb(249, 17, 52);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right h1{
+    font-size: 2.5em;
+    margin: 7% 7% 5% 7%;
+    color: white;
+}
+.right img{
+}
+
+.right p{
+    padding: 3%;
+    text-align: center;
+    width: 75%;
+    font-size: 1.2em;
 }
