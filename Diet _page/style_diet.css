@@ -126,7 +126,7 @@ header a{
     margin-bottom: 5%;
 }
 
-.container1{
+.container1,.container2,.container3,.container4,.container5{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
     display: grid;
@@ -157,6 +157,124 @@ header a{
 
 .container1 .right1 ul{
     padding: 5%;
+    text-align: left;
+}
+.container1 .left1 ul{
+    padding: 5%;
+    text-align: left;
+}
+
+
+
+.container2 .left2,.right2{
+    padding: 5%;
+}
+
+.container2 .left2{
+    border-right: 2px solid;
+}
+
+.container2 .right2 h2{
+    color: red;
+    padding: 2%;
+}
+
+.container2 .left2 h2{
+    color: green;
+    padding : 2%;
+}
+
+.container2 .right2 ul{
+    padding: 5%;
+    text-align: left;
+}
+.container2 .left2 ul{
+    padding: 5%;
+    text-align: left;
+}
+
+
+.container3 .left3,.right3{
+    padding: 5%;
+}
+
+.container3 .left3{
+    border-right: 2px solid;
+}
+
+.container3 .right3 h2{
+    color: red;
+    padding: 2%;
+}
+
+.container3 .left3 h2{
+    color: green;
+    padding : 2%;
+}
+
+.container3 .right3 ul{
+    padding: 5%;
+    text-align: left;
+}
+.container3 .left3 ul{
+    padding: 5%;
+    text-align: left;
+}
+
+
+.container4 .left4,.right4{
+    padding: 5%;
+}
+
+.container4 .left4{
+    border-right: 2px solid;
+}
+
+.container4 .right4 h2{
+    color: red;
+    padding: 2%;
+}
+
+.container4 .left4 h2{
+    color: green;
+    padding : 2%;
+}
+
+.container4 .right4 ul{
+    padding: 5%;
+    text-align: left;
+}
+.container4 .left4 ul{
+    padding: 5%;
+    text-align: left;
+}
+
+
+.container5 .left5,.right5{
+    padding: 5%;
+}
+
+.container5 .left5{
+    border-right: 2px solid;
+}
+
+.container5 .right5 h2{
+    color: red;
+    padding: 2%;
+}
+
+.container5 .left5 h2{
+    color: green;
+    padding : 2%;
+}
+
+.container5 .right5 ul{
+    padding: 5%;
+    text-align: left;
+}
+.container5 .left5 ul{
+    padding: 5%;
+    text-align: left;
 }
 
 footer{
