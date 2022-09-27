@@ -11,39 +11,44 @@
 <body>
     <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
     <div class="container">
-        <div class="details">
-            <div class="personaldetails">
-                <h1>Enter the details</h1>
-                <div class="name">
-                    <input type="text" name="username" id="uname" placeholder="Enter Your Name">
-                </div>
-                <div class="email">
-                    <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
-                </div>
-                <div class="age">
-                    Age : <input type="number" name="age" min="15" max="100">
-                </div>
-                <div class="gender">
-                    <select name="gender" id="gender">
-                        <option value="Select">--Please Select Your Gender--</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="bp">
-                    Resting B.P. (in mm Hg) : <input type="number" name="bp" min="120" max="200">
-                </div>
-                <div class="cholestrol">
-                    Cholestrol Level : <input type="number" name="cholestrol" min="60" max="580">
-                </div>
-                <div class="sugar">
-                    Fasting Blood Sugar(in mg/dl): <input type="number" name="sugar" min="120" max="1000">
-                </div>
-                <input type="submit" class="submit" value="Proceed">
+        <div class="left">
+            <h1>Enter Your details</h1>
+            <div class="name">
+                <input type="text" name="username" id="uname" placeholder="Enter Your Name">
+            </div>
+            <div class="email">
+                <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
+            </div>
+            <div class="age">
+                <input type="number" name="age" min="15" max="100" placeholder="Age">
+            </div>
+            <div class="gender">
+                <select name="gender" id="gender">
+                    <option value="Select">--Please Select Your Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
         </div>
-
+        <div class="right">
+            <div class="height">
+                <input type="text" name="height" placeholder="Height (in m)">
+            </div>
+            <div class="weight">
+                <input type="text" name="weight" placeholder="Weight (in kg)">
+            </div>
+            <div class="bp">
+                <input type="text" name="bp" min="120" max="200" placeholder="Resting B.P. (in mm Hg)">
+            </div>
+            <div class="cholestrol">
+                <input type="text" name="cholestrol" min="60" max="580" placeholder="Cholestrol Level">
+            </div>
+            <div class="sugar">
+                <input type="text" name="sugar" min="120" max="1000" placeholder="Fasting Blood Sugar(in mg/dl):">
+            </div>
+            <input type="submit" class="submit" value="Proceed" placeholder="">
+        </div>
     </div>
 </body>
 </html>
