@@ -31,23 +31,30 @@
                 </select>
             </div>
         </div>
-        <div class="right">
+        <div class="right-container">
+            <div class="right">
             <div class="height">
-                <input type="text" name="height" placeholder="Height (in m)">
+                Height (in m):
+                <input type="number" name="height" class="input">
             </div>
             <div class="weight">
-                <input type="text" name="weight" placeholder="Weight (in kg)">
+                Weight (in kg):
+                <input type="number" name="weight" class="input">
             </div>
             <div class="bp">
-                <input type="text" name="bp" min="120" max="200" placeholder="Resting B.P. (in mm Hg)">
+                Resting B.P. (in mm Hg) :
+                <input type="number" name="bp" min="120" max="200" class="input">
             </div>
-            <div class="cholestrol">
-                <input type="text" name="cholestrol" min="60" max="580" placeholder="Cholestrol Level">
+            <div class="chol">
+                Enter Your Cholestrol Level :
+                <input type="number" name="cholestrol" min="60" max="580" class="input">
             </div>
             <div class="sugar">
-                <input type="text" name="sugar" min="120" max="1000" placeholder="Fasting Blood Sugar(in mg/dl):">
+                Fasting Blood Sugar(in mg/dl) :
+                <input type="number" name="sugar" min="120" max="1000" class="input">
             </div>
-            <input type="submit" class="submit" value="Proceed" placeholder="">
+            <input type="submit" class="submit" value="Proceed" placeholder="" onclick="submit">
+        </div>
         </div>
     </div>
 </body>
