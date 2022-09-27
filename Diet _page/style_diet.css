@@ -7,6 +7,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2em;
+    text-align: center;
 }
 
 #mainlogo{
@@ -74,6 +75,13 @@ header a{
     color: white;
 }
 
+.introhead{
+    width: 28%;
+    position: absolute;
+    top: 39%;
+    right: 3%;
+}
+
 .check{
     border-radius: 10px;
     margin: 4% 20% 2% 20%;
@@ -103,36 +111,52 @@ header a{
     margin: 0 0 3% 0;
 }
 
-.section1 {
+.section1{
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    text-align: center;;
     font-size: 1.2em;
     line-height: 1.7em;
-    margin: 0 20% 10% 20%;
+    margin: 0 22% 10% 22%;
     padding: 3% 7% 5% 7%;
 }
 
 .section1 img{
+    text-align: center;;
     margin-bottom: 5%;
 }
 
-h1{
-    color: rgb(249, 17, 52);
+.container1{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    padding: 2%;
+    margin: 3% 15%;
 }
 
-body{
-    text-align: center;
+.container1 .left1,.right1{
+    padding: 5%;
 }
 
-table{
-    width: 50%;
-    border: 1px solid black;
+.container1 .left1{
+    border-right: 2px solid;
 }
 
-th{
-    background-color: rgb(249, 17, 52);
+.container1 .right1 h2{
+    color: red;
+    padding: 2%;
 }
 
-.tab{
-text-align: center;
+.container1 .left1 h2{
+    color: green;
+    padding : 2%;
+}
+
+.container1 .right1 ul{
+    padding: 5%;
 }
 
 footer{

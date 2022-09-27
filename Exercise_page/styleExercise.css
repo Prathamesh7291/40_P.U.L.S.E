@@ -78,8 +78,11 @@ header a{
     position: absolute;
     left: 5%;
     top: 35%;
-    width: 30%;
+    width: 35%;
     height: 21%;
+}
+.quote1 h1{
+    text-align: left;
 }
 
 .quote1 p{
@@ -107,10 +110,12 @@ header a{
 .quoteTxt p{
     width: 100%;
 }
+
 h1{
     text-align: center;
     margin-top: 2%;
 }
+
 #ex1,#ex2,#ex3{
     font-family:sans-serif;
     border: 2px solid #C4CFD8;
