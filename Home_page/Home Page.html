@@ -52,69 +52,65 @@
         </div>-->
         <div class="facts">
             <div class="group" id="sec sec1">
-              <div class="fact1" id="facts">
-                More heart attacks happen on a Monday than any other day of the week.
-              </div>
-              <div class="fact2" id="facts">
-                Heart disease is the number 1 cause of death.
-              </div>
-              <div class="fact3" id="facts">
-                A woman’s heart beats slightly faster than a man’s heart.
-              </div>
-              <div class="fact4" id="facts">
-                The heart can continue beating even when it’s disconnected from the
-                body.
-              </div>
-              <div class="fact5" id="facts">
-                Your heart will beat about 115,000 times each day.
-              </div>
+                <div class="fact1" id="facts">
+                    More heart attacks happen on a Monday than any other day of the week.
+                </div>
+                <div class="fact2" id="facts">
+                    Heart disease is the number 1 cause of death.
+                </div>
+                <div class="fact3" id="facts">
+                    A woman’s heart beats slightly faster than a man’s heart.
+                </div>
+                <div class="fact4" id="facts">
+                    The heart can continue beating even when it’s disconnected from the
+                    body.
+                </div>
+                <div class="fact5" id="facts">
+                    Your heart will beat about 115,000 times each day.
+                </div>
+                </div>
+                <div class="group" id="sec sec2">
+                <div class="fact6" id="facts">
+                    The average heart is the size of a fist in an adult.
+                </div>
+                <div class="fact7" id="facts">
+                    The heart is located in the center of the chest, usually pointing slightly left.
+                </div>
+                <div class="fact8" id="facts">
+                    Most heart attacks happen on a Monday
+                </div>
+                <div class="fact9" id="facts">
+                    An adult heart beats about 60 to 80 times per minute.
+                </div>
+                <div class="fact10" id="facts">
+                    Heart cells stop dividing, which means heart cancer is extremely rare.
+                </div>
+                </div>
+                <div class="group" id="sec sec3">
+                <div class="fact11" id="facts">
+                    Your heart pumps about 1.5 gallons of blood every minute
+                </div>
+                <div class="fact12" id="facts">
+                    Heart disease is the number 1 cause of death in the United States.
+                </div>
+                <div class="fact13" id="facts">
+                    The heart is located in the center of the chest, usually pointing slightly left.
+                </div>
+                <div class="fact14" id="facts">
+                    “Atrium” and "Ventricle" are Latin for “entrance hall,”  and “little belly”.
+                </div>
+                <div class="fact15" id="facts">
+                    Your heart is located in your chest and is well protected by your rib
+                    cage.
+                </div>
             </div>
-            <div class="group" id="sec sec2">
-              <div class="fact6" id="facts">
-                The average heart is the size of a fist in an adult.
-              </div>
-              <div class="fact7" id="facts">
-                The earliest known case of heart disease was identified in the remains
-                of a 3,500-year-old Egyptian mummy.
-              </div>
-              <div class="fact8" id="facts">
-                Most heart attacks happen on a Monday
-              </div>
-              <div class="fact9" id="facts">
-                Death from a broken heart, or broken heart syndrome, is possible but
-                extremely rare.
-              </div>
-              <div class="fact10" id="facts">
-                Heart cells stop dividing, which means heart cancer is extremely rare.
-              </div>
-            </div>
-            <div class="group" id="sec sec3">
-              <div class="fact11" id="facts">
-                Your heart pumps about 1.5 gallons of blood every minute
-              </div>
-              <div class="fact12" id="facts">
-                Heart disease is the number 1 cause of death in the United States.
-              </div>
-              <div class="fact13" id="facts">
-                The “thump-thump” of a heartbeat is the sound made by the four valves
-                of the heart closing.
-              </div>
-              <div class="fact14" id="facts">
-                “Atrium” is Latin for “entrance hall,” and “ventricle” is Latin for
-                “little belly”.
-              </div>
-              <div class="fact15" id="facts">
-                Your heart is located in your chest and is well protected by your rib
-                cage.
-              </div>
-            </div>
-          </div>
-          <br />
-          <div style="text-align: center">
+        </div>
+        <br />
+        <div style="text-align: center">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-          </div>
+        </div>
     </div>
     <footer>
         <p>&copy; 2022 HeartMyHeart</p>
@@ -128,23 +124,23 @@
         let slideIndex = 0;
         showSlides();
 
-function showSlides() {
-let i;
-let slides = document.getElementsByClassName("group");
-let dots = document.getElementsByClassName("dot");
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
-}
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "flex";
-dots[slideIndex-1].className += " active";
-setTimeout(showSlides, 10000);
-}
-</script>
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("group");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "flex";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000);
+        }
+    </script>
 
 </body>
 </html>
