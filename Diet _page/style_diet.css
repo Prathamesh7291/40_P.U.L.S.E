@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -5,14 +7,16 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     text-align: center;
 }
 
-#mainlogo{
+header a #mainlogo{
     cursor: pointer;
-    margin-right: auto;
+    position: absolute;
+    top: 3%;
+    left: 3%;
 }
 
 header{
@@ -117,13 +121,18 @@ header a{
     text-align: center;;
     font-size: 1.2em;
     line-height: 1.7em;
-    margin: 0 22% 10% 22%;
-    padding: 3% 7% 5% 7%;
+    margin: 0 27% 10% 27%;
+    padding: 3%;
 }
 
 .section1 img{
     text-align: center;;
     margin-bottom: 5%;
+}
+
+.section1 h2{
+    padding: 0 0 4% 0;
+    color: rgb(249, 17, 52);
 }
 
 .container1,.container2,.container3,.container4,.container5{
@@ -132,9 +141,10 @@ header a{
     display: grid;
     border-radius: 10px;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 60%;
     padding: 2%;
-    margin: 3% 15%;
+    margin: 3% 20%;
+    line-height: 1.5em;
 }
 
 .container1 .left1,.right1{
@@ -142,7 +152,7 @@ header a{
 }
 
 .container1 .left1{
-    border-right: 2px solid;
+    border-right: 1px solid;
 }
 
 .container1 .right1 h2{
@@ -157,21 +167,21 @@ header a{
 
 .container1 .right1 ul{
     padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
 .container1 .left1 ul{
     padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
-
-
 
 .container2 .left2,.right2{
     padding: 5%;
 }
 
 .container2 .left2{
-    border-right: 2px solid;
+    border-right: 1px solid;
 }
 
 .container2 .right2 h2{
@@ -186,20 +196,22 @@ header a{
 
 .container2 .right2 ul{
     padding: 5%;
-    text-align: left;
-}
-.container2 .left2 ul{
-    padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
 
+.container2 .left2 ul{
+    padding: 5%;
+    text-align: center;
+    list-style-type: none;
+}
 
 .container3 .left3,.right3{
     padding: 5%;
 }
 
 .container3 .left3{
-    border-right: 2px solid;
+    border-right: 1px solid;
 }
 
 .container3 .right3 h2{
@@ -214,20 +226,22 @@ header a{
 
 .container3 .right3 ul{
     padding: 5%;
-    text-align: left;
-}
-.container3 .left3 ul{
-    padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
 
+.container3 .left3 ul{
+    padding: 5%;
+    text-align: center;
+    list-style-type: none;
+}
 
 .container4 .left4,.right4{
     padding: 5%;
 }
 
 .container4 .left4{
-    border-right: 2px solid;
+    border-right: 1px solid;
 }
 
 .container4 .right4 h2{
@@ -242,20 +256,21 @@ header a{
 
 .container4 .right4 ul{
     padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
 .container4 .left4 ul{
     padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
-
 
 .container5 .left5,.right5{
     padding: 5%;
 }
 
 .container5 .left5{
-    border-right: 2px solid;
+    border-right: 1px solid;
 }
 
 .container5 .right5 h2{
@@ -270,11 +285,17 @@ header a{
 
 .container5 .right5 ul{
     padding: 5%;
-    text-align: left;
+    text-align: center;
+    list-style-type: none;
 }
 .container5 .left5 ul{
     padding: 5%;
-    text-align: left;
+    list-style-type: none;
+    text-align: center;
+}
+
+.container1,.container2,.container3,.container4,.container5{
+    font-size: 1.2em;
 }
 
 footer{
