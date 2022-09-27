@@ -81,8 +81,8 @@ header a{
 .quote1{
     position: absolute;
     left: 5%;
-    top: 32%;
-    width: 35%;
+    top: 25%;
+    width: 38%;
     height: 21%;
 }
 .quote1 h1{
@@ -98,7 +98,7 @@ header a{
 
 .quote{
     border-radius: 10px;
-    margin: 7% 24%;
+    margin: 7% 24% 10% 24%;
     padding: 3%;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
