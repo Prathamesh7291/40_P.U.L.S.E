@@ -12,7 +12,7 @@ body{
 
 .home{
     position: absolute;
-    border border-radius: 1px;
+     border-radius: 1px;
     padding:.5%;
     top: 2%;
     left: 2%;
@@ -41,7 +41,7 @@ body{
     width: 60%;
 }
 
-.left form input{
+.left div input{
     font-size: 1.05em;
     display: block;
     width: 80%;
@@ -62,7 +62,7 @@ body{
     font-size: 2.5em;
 }
 
-form button{
+div button{
     font-size: 1.05em;
     border: none;
     border-radius: 5px;
@@ -74,12 +74,12 @@ form button{
     color: rgb(249, 17, 52);
 }
 
-form a{
+div a{
     text-decoration: none;
     color: rgb(249, 17, 52);
 }
 
-form button:hover{
+div button:hover{
     background-color: rgb(249, 17, 52);
     color: white;
     cursor: pointer;

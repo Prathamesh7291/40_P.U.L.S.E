@@ -13,13 +13,15 @@
     <div class="container">
         <div class="left">
             <h1>Register Now</h1>
-            <form action="" class="register">
+           
+            <div class="register">
                 <input type="text" name="Username" id="username" placeholder="Enter Username">
                 <input type="email" name="Email" id="usermail" placeholder="Enter Your Email">
                 <input type="password" name="Password" id="password" placeholder="Enter Password">
                 <input type="password" name="Confirm_Password" id="confirmpassword" placeholder="Confirm Password">
-                <a href=""><button>Register</button></a>
-            </form>
+          
+                <button id="signup">Sign up</button>
+            </div>
         </div>
         <div class="right">
             <h1>Welcome User !</h1>
@@ -28,4 +30,50 @@
         </div>
     </div>
 </body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+   import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"; 
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBSP7AerbTt6TB4upcc7EXzfJ87t7vlKKk",
+      authDomain: "authentication-be490.firebaseapp.com",
+      projectId: "authentication-be490",
+      storageBucket: "authentication-be490.appspot.com",
+      messagingSenderId: "702585034150",
+      appId: "1:702585034150:web:0d92f3c0b5de71579d2b67"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app)
+    const auth = getAuth();
+    const signup=document.querySelector('#signup')
+    console.log(signup)
+       signup.addEventListener('click', ()=> {
+      var email = document.getElementById('usermail').value;
+      var password = document.getElementById('password').value;
+      var username = document.getElementById('username').value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert('user Created')
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert('errorMessage');
+    // ..
+  });
+
+    })
+  </script>
 </html>
