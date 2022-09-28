@@ -24,7 +24,7 @@ body{
     width: 60%;
 }
 
-.left form input{
+.left .form input{
     font-size: 1.05em;
     display: block;
     width: 80%;
@@ -62,7 +62,7 @@ body{
     border-bottom: 2px solid rgb(249, 17, 52);
 }
 
-form button{
+.form button{
     font-size: 1.05em;
     border: none;
     border-radius: 5px;
@@ -74,19 +74,19 @@ form button{
     color: rgb(249, 17, 52);
 }
 
-form button:hover{
+.form button:hover{
     background-color: rgb(249, 17, 52);
     color: white;
     cursor: pointer;
 }
 
-form a{
+.form a{
     display: block;;
     text-decoration: none;
     color: rgb(249, 17, 52);
 }
 
-form a:hover{
+.form a:hover{
     text-decoration: underline;
     cursor: pointer;
 }

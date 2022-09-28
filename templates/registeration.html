@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="style_registration.css">
+    <link rel="stylesheet" href="../static/registeration.css">
 </head>
 <body>
-    <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
+    <a href="../templates/homePage.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
     <div class="container">
         <div class="left">
             <h1>Register Now</h1>
@@ -19,12 +19,13 @@
                 <input type="email" name="Email" id="usermail" placeholder="Enter Your Email">
                 <input type="password" name="Password" id="password" placeholder="Enter Password">
                 <input type="password" name="Confirm_Password" id="confirmpassword" placeholder="Confirm Password">
+          
                 <button id="signup">Sign up</button>
             </div>
         </div>
         <div class="right">
             <h1>Welcome User !</h1>
-            <img src="images/Welcome_Page-removebg.png" alt="Illustration" id="welcome" width="70%">
+            <img src="../static/Images/Welcome_Page-removebg-preview.png" alt="Illustration" id="welcome" width="70%">
             <p>Enter your personal details and start journey with us</p>
         </div>
     </div>
@@ -63,13 +64,14 @@
     .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert('user Created')
+    alert('user Created');
+    window.location="../templates/homePage.html"
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert('errorMessage');
+    alert(errorMessage);
     // ..
   });
 

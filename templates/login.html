@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+    <a href="../templates/homePage.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
+    <div class="container">
+        <div class="left">
+            <h1>Log In</h1>
+            <div class="form">
+            <input type="email" name="Email" id="usermail" placeholder="Enter Your E-mail">
+            <input type="password" name="Password" id="password" placeholder="Enter Your Password">
+            <a href="">Forgot your password?</a>
+            <button id="login">Login</button>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Welcome Back !</h1>
+            <img src="../static/Images/Nice to see you again.png" alt="Illustration" width="75%">
+            <p>We are glad to see you here again. Hope you are fine.</p>
+        </div>
+        
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getDatabase} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+   import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"; 
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBSP7AerbTt6TB4upcc7EXzfJ87t7vlKKk",
+      authDomain: "authentication-be490.firebaseapp.com",
+      projectId: "authentication-be490",
+      storageBucket: "authentication-be490.appspot.com",
+      messagingSenderId: "702585034150",
+      appId: "1:702585034150:web:0d92f3c0b5de71579d2b67"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app)
+    const auth = getAuth();
+    
+      
+  const login = document.getElementById('login')
+
+    
+    login.addEventListener('click',(e)=>{
+      console.log("clicked")
+        var email = document.getElementById('usermail').value;
+      var password = document.getElementById('password').value;
+        signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+       alert('user logged in!')
+       window.location="../templates/homePage.html"
+         
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode,errorMessage)
+  });
+    
+}) 
+  </script>
+</html>

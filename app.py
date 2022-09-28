@@ -9,7 +9,7 @@ model=pickle.load(open("random.pkl", "rb"))
 
 @app.route("/")
 def Home():
-    return render_template("medical_history.html")
+    return render_template("../templates/medHistory.html")
 
 def dataConvertor (features):
     finaldata= []
@@ -56,7 +56,7 @@ def predict():
     elif prrr[0] == 0:
         a = "You don't have a Heart disease"
         
-    return render_template("temp.html",prediction =a)
+    return render_template("../templates/result.html",prediction =a)
 
 if __name__ == "__main__":
     app.run(debug=True)
