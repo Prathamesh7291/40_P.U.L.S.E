@@ -63,29 +63,32 @@ body{
     font-size: 2.5em;
 }
 
-.right{
+.rightcontainer{
     width: 100%;
-    border-left: 2px solid black;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.right{
+    height: 100%;
     display: flex;
+    border-left: 2px solid;
     flex-direction: column;
     align-items: center;
 }
 
-.right input{
-    display:block;
-    font-size: 1.05em;
-    width: 80%;
-    padding: 2%;
-    margin: 5% 10%;
+.bp,.chol,.sugar,.height,.weight, .input{
+    height: 100%;
+    margin: 3%;
+    padding : 0 5%;
+    width : 90%;
 }
 
 .right .submit{
     font-size: 1.05em;
     border: none;
     border-radius: 5px;
-    margin: 5%;
+    margin: 7%;
     padding: 3% 7%;
     text-decoration: none;
     background-color: white;
@@ -98,9 +101,3 @@ body{
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
-
