@@ -47,7 +47,7 @@ body{
     display: block;
     width: 80%;
     padding: 2%;
-    margin: 5% 10%;
+    margin: 3% 10%;
 }
 
 .left{
@@ -70,6 +70,7 @@ body{
 }
 
 .right{
+    border-left: 1px solid black;
     height: 100%;
     display: flex;
     border-left: 2px solid;
@@ -78,9 +79,10 @@ body{
 }
 
 .bp,.chol,.sugar,.height,.weight, .input{
-    height: 100%;
-    margin: 3%;
-    padding : 0 5%;
+
+    height: 70%;
+    margin: 2.1%;
+    padding : 0 3%;
     width : 90%;
 }
 
