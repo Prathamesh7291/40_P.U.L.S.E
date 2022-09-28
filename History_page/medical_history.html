@@ -12,38 +12,60 @@
     <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
     <form action="" class="userdata">
         <h1 class="formheading">Enter Your Details</h1>
-        <p class="uname">Name</p>
+        <p class="uname">Name :</p>
         <input type="text" name="name" id="uname">
-        <p class="umail">Email</p>
+        <p class="umail">Email :</p>
         <input type="email" name="email" id="umail">
+        <div class="ages">
         <p class="uage">Age</p>
         <input type="number" name="age" id="uage" max="100" min="15">
+        </div>
         <div class="gender">
         <p class="gender">Gender</p>
-            <input type="radio" name="gender" id="male"><label for="male">Male</label>
-            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+            <div>
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+            </div>
         </div>
-        <p class="chestpain">Chest Pain Type</p>
-        <input type="number" name="chestpain" id="chestpain"> //button 0,1,2,3
+        <div class="chestpain">
+            <p class="chestpain">Chest Pain Type</p>
+            <div>
+                <input type="radio" name="chestpain" id="zero"><label for="zero">0</label>
+                <input type="radio" name="chestpain" id="one"><label for="one">1</label>
+                <input type="radio" name="chestpain" id="two"><label for="two">2</label>
+                <input type="radio" name="chestpain" id="three"><label for="three">3</label>
+            </div>
+        </div>
         <p class="bloodpressure">Resting Blood Pressure</p>
         <input type="number" name="bloodpressure" id="bloodpressure" max="220" min="70">
         <p class="a">Serum Cholestoral in mg/dl</p>
         <input type="number" max="" min="120" max="600">
         <p class="a">Fasting Blood Sugar in mg/dl</p>
-        <input type="number"> //more than 120 true
-        <p class="a">Resting Electrocardiographic Results</p>
+        <input type="number" max="500" min="50"> <!--more than 120 true-->
+        <p class="restedr">Resting Electrocardiographic Results</p>
         <input type="number" >
-        <p class="a">thalach Maximum Heart Rate achieved</p>
+        <p class="maxhr">Maximum Heart Rate achieved</p>
         <input type="number" min="60" max="250">
-        <p class="a">Exercise Induced Angina</p> //1,0
-        <input type="number">
+        <p class="angina">Exercise Induced Angina</p> 
+        <input type="number" min="0" max="1">
         <p class="a">ST depression induced by exercise relative to rest</p>
-        <input type="number" min="0" max="7"> //1,0
-        <p class="a">The slope of the peak exercise ST segment</p>
-        <input type="number" min="0" max="2"> //button 0,1,2
-        <p class="a">Number of Major Vessels (0-3) colored by flourosopy</p> //button
-        <input type="number">
-        <p class="a">thal</p> //
+        <input type="number" min="0" max="7">
+        <div class="slope">
+            <p class="slope">The slope of the peak exercise ST segment</p>
+            <div class="option">
+            <input type="radio" name="slope" id="zero"><label for="zero">0</label>
+            <input type="radio" name="slope" id="one"><label for="one">1</label>
+            <input type="radio" name="slope" id="two"><label for="two">2</label>
+            </div>
+        </div> 
+        <div class="vessels">
+            <p class="vessels">Number of Major Vessels (0-3) colored by flourosopy</p>
+            <input type="radio" name="vessels" id="zero"><label for="zero">0</label>
+            <input type="radio" name="vessels" id="one"><label for="one">1</label>
+            <input type="radio" name="vessels" id="two"><label for="two">2</label>
+            <input type="radio" name="vessels" id="three"><label for="three">3</label>
+        </div>
+        <p class="thal">thal</p> 
         <input type="number" min="0" max="3">
         <button class="submit">Submit</button>
     </form>

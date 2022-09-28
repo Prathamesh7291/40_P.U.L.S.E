@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 
 *{
     padding: 0%;
@@ -10,28 +8,44 @@
 
 body{
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
 }
 
+.userdata h1{
+    margin-bottom: 7.5%;
+    text-align: center;
+}
 .userdata{
+    font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     margin: 4% 20%;
-    padding: 3% 7%;
+    padding: 3% 15%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 } 
 
-input[type="text"],input[type="email"],input[type="number"]{
-    width: 60%;
-    margin: 2% 0;
-    padding: 1.5%;
+.ages{
+    display: flex;
+    align-items: center;
 }
 
-.userdata .gender{
-    margin: 2% 0%;
-    padding: 0%;
+.ages p{
+    margin-right: 5%;
+}
+
+.userdata input[type="text"],input[type="email"]{
+    padding: 1.5%;
+    margin: 2% 0;
+}
+
+.userdata input[type="number"]{
+    padding: 1.5%;
+    width: 20%;
+    margin: 2% 0;
+}
+
+.userdata input[type="radio"]{
 
 }
 
