@@ -15,9 +15,9 @@ def main():
 def main1():
     return render_template('login.html')
 
-@app.route("/registration")
+@app.route("/registeration")
 def main2():
-    return render_template('registration.html')
+    return render_template('registeration.html')
 
 @app.route("/diet")
 def main3():
