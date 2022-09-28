@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+}
+
+.userdata h1{
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.userdata{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    margin: 4% 20%;
+    padding: 3% ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+} 
+
+.ages{
+    display: flex;
+    align-items: center;
+}
+
+.ages p{
+    margin-right: 2%;
+}
+
+.bps{
+    display: flex;
+    align-items: center;
+}
+
+.bps p{
+    margin-right: 2%;
+}
+
+.chols{
+    display: flex;
+    align-items: center;
+}
+
+.chols p{
+    margin-right: 2%;
+}
+
+.sugars{
+    display: flex;
+    align-items: center;
+}
+
+.sugars p{
+    margin-right: 2%;
+}
+
+.edresults{
+    display: flex;
+    align-items: center;
+}
+
+.edresults p{
+    margin-right: 2%;
+}
+
+.depressions{
+    display: flex;
+    align-items: center;
+}
+
+.depressions p{
+    margin-right: 2%;
+}
+
+.anginas{
+    display: flex;
+    align-items: center;
+}
+
+.anginas p{
+    margin-right: 3%;
+}
+
+.maxhrs{
+    display: flex;
+    align-items: center;
+}
+
+.maxhrs p{
+    margin-right: 2%;
+}
+
+.thals{
+    display: flex;
+    align-items: center;
+}
+
+.thals p{
+    margin-right: 2%;
+}
+
+.options{
+    display: flex;
+    margin: 1% 0;
+}
+
+.options div{
+    padding-right: 4%;
+}
+
+input[type="text"],input[type="email"]{
+    width: 70%;
+    padding: 1.1%;
+    margin: 2% 0;
+}
+
+.chestpain{
+    margin: 1.5% 0 1% 0;
+}
+
+.gender{
+    margin: 1.5% 0 1% 0; 
+}
+
+.vessels{
+    margin: 2% 0 1% 0; 
+}
+
+.slope{
+    margin: 2% 0 0 0; 
+}
+
+.userdata input[type="number"]{
+    padding: 1.1%;
+    width: 20%;
+    margin: 2% 0;
+}
+
+.userdata input[type="radio"]{
+    accent-color: red;
+}
+
+.home{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    border-radius: 1px;
+    padding:.5%;
+    top: 2%;
+    left: 2%;
+    text-decoration: none;
+    color:rgb(249, 17, 52);
+}
+
+.home a{
+    font-size: 1.2em;
+}
+
+.home:hover{
+    border-bottom: 2px solid rgb(249, 17, 52);
+}
+
+button{
+    font-size: 1.05em;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    margin: 5% 40%;
+    padding: 2%;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid rgb(249, 17, 52);
+    color: rgb(249, 17, 52);
+}
+
+button:hover{
+    background-color: rgb(249, 17, 52);
+    color: white;
+    cursor: pointer;
+}
