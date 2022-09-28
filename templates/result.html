@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../static/result.css">
 </head>
 <body>
-    {{prediction}}
+    <a href="/" class="home"><i class="fas fa-chevron-left"></i> Home</a>
+    <div class="container">
+        <h1>Result</h1>
+        <img src="../static/Images/Result pad.png" alt="resultimage" height="30%">
+        <p><strong>{{prediction}}</strong></p>
+        <p>Follow the links below for assistance </p>
+        <a href="/diet" class="links">Diet</a>
+        <a href="/exercise" class="links">Exercise</a>
+    </div>
 </body>
 </html>
