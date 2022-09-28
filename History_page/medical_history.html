@@ -10,54 +10,42 @@
 </head>
 <body>
     <a href="../Home_page/Home Page.html" class="home"><i class="fas fa-chevron-left"></i> Home</a>
-    <div class="container">
-        <div class="left">
-            <h1>Enter Your details</h1>
-            <div class="name">
-                <input type="text" name="username" id="uname" placeholder="Enter Your Name">
-            </div>
-            <div class="email">
-                <input type="email" name="usermail" id="umail" placeholder="Enter Your E-Mail">
-            </div>
-            <div class="age">
-                <input type="number" name="age" min="15" max="100" placeholder="Age">
-            </div>
-            <div class="gender">
-                <select name="gender" id="gender">
-                    <option value="Select">--Please Select Your Gender--</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
+    <form action="" class="userdata">
+        <h1 class="formheading">Enter Your Details</h1>
+        <p class="uname">Name</p>
+        <input type="text" name="name" id="uname">
+        <p class="umail">Email</p>
+        <input type="email" name="email" id="umail">
+        <p class="uage">Age</p>
+        <input type="number" name="age" id="uage" max="100" min="15">
+        <div class="gender">
+        <p class="gender">Gender</p>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
         </div>
-        <div class="right-container">
-            <div class="right">
-            <div class="height">
-
-                Height (in m):
-                <input type="number" name="height" class="input">
-            </div>
-            <div class="weight">
-                Weight (in kg):
-                <input type="number" name="weight" class="input">
-            </div>
-            <div class="bp">
-                Resting B.P. (in mm Hg) :
-                <input type="number" name="bp" min="120" max="200" class="input">
-            </div>
-            <div class="chol">
-                Enter Your Cholestrol Level :
-                <input type="number" name="cholestrol" min="60" max="580" class="input">
-            </div>
-            <div class="sugar">
-                Fasting Blood Sugar(in mg/dl) :
-                <input type="number" name="sugar" min="120" max="1000" class="input">
->>>>>>> e415efa0056b11107507a93c9dbe0ea3aa8cebf3
-            </div>
-            <input type="submit" class="submit" value="Proceed" placeholder="" onclick="submit">
-        </div>
-        </div>
-    </div>
+        <p class="chestpain">Chest Pain Type</p>
+        <input type="number" name="chestpain" id="chestpain"> //button 0,1,2,3
+        <p class="bloodpressure">Resting Blood Pressure</p>
+        <input type="number" name="bloodpressure" id="bloodpressure" max="220" min="70">
+        <p class="a">Serum Cholestoral in mg/dl</p>
+        <input type="number" max="" min="120" max="600">
+        <p class="a">Fasting Blood Sugar in mg/dl</p>
+        <input type="number"> //more than 120 true
+        <p class="a">Resting Electrocardiographic Results</p>
+        <input type="number" >
+        <p class="a">thalach Maximum Heart Rate achieved</p>
+        <input type="number" min="60" max="250">
+        <p class="a">Exercise Induced Angina</p> //1,0
+        <input type="number">
+        <p class="a">ST depression induced by exercise relative to rest</p>
+        <input type="number" min="0" max="7"> //1,0
+        <p class="a">The slope of the peak exercise ST segment</p>
+        <input type="number" min="0" max="2"> //button 0,1,2
+        <p class="a">Number of Major Vessels (0-3) colored by flourosopy</p> //button
+        <input type="number">
+        <p class="a">thal</p> //
+        <input type="number" min="0" max="3">
+        <button class="submit">Submit</button>
+    </form>
 </body>
 </html>
