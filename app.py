@@ -1,15 +1,15 @@
 
 import numpy as np
-from flask import Flask , request, jasonify, render_template
+from flask import Flask , request, render_template
 import pickle
 
 app=Flask(__name__)
 
-model=pickle.load(open("model.pkl", "rb"))
+model=pickle.load(open("random.pkl", "rb"))
 
 @app.route("/n")
 def Home():
-    return render_template("")
+    return render_template(". html")
 
 @app.route("/predict",methods=['POST'])
 def predict():
@@ -17,7 +17,7 @@ def predict():
     features=[np.array(float_features)]
     prediction=model.prediction(features)
 
-    return render_template(".html",prediction_text="".format(prediction))
+    return render_template(".html",prediction_text=" jlj".format(prediction))
 
 if __name__ == "__main__":
     app.run(debug=True)
